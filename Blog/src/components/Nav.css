@@ -1,0 +1,113 @@
+/* Navbar.css */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ff735c;
+  padding: 15px;
+}
+
+.logo {
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.nav-links li {
+  margin-right: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+.dropdown {
+  position: relative;
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 68px;
+  left: -99px;
+  background-color: #ff735c;
+  list-style: none;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+}
+
+.dropdown-menu li {
+  margin: 10px 0;
+}
+
+.dropdown-menu a {
+  text-decoration: none;
+  color: #fff;
+}
+
+
+nav .nav-holder-2 {
+  display: grid;
+  place-items: center;
+  width: 40%;
+  position: relative;
+}
+
+nav .nav-holder-2 .icon {
+  position: absolute;
+  top: 50%;
+  left: 80%;
+  transform: translateY(-50%);
+  color: #888;
+  font-size: 18px;
+}
+
+nav .nav-holder-2 input {
+  width: 80%;
+  padding: 10px 10px 10px 45px;
+  font-size: 14px;
+  border-radius: 30px;
+  outline: none;
+  border: none;
+}
+
+.nav-holder-3 .iconn {
+  font-size: 20px
+}
+
+.nav-holder-3 a {
+  gap: 15px;
+  display: flex;
+  color: #fff;
+  align-items: end;
+}
+
+.nav-holder-4 {
+  display: flex;
+  gap: 5px;
+  color: #fff;
+  align-items: center;
+
+}
+
+.nav-holder-4 .iconn {
+  font-size: 15px;
+}
+
+.nav-holder-4 img {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  aspect-ratio: auto 32 / 32;
+  vertical-align: middle;
+}

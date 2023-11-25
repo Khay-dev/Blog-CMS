@@ -1,0 +1,118 @@
+.register .container {
+  display: flex;
+  width: 100vw;
+  height: auto;
+  align-items: center;
+  padding: 90px 50px;
+  gap: 50px;
+}
+
+.register .container .section-b {
+  width: 55%;
+}
+
+
+
+.register .container form {
+  width: 40%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.register .container form h1 {
+  color: #ff735c;
+  margin-bottom: 10px;
+}
+
+.register .container form p {
+  font-size: 14px;
+}
+
+/* 
+* {
+  border: 1px solid red;
+} */
+
+
+.register .container form input {
+  width: 80%;
+  background: #f1f4f1;
+  padding: 20px 20px 20px 30px;
+  border: none;
+}
+
+
+.register .container form button {
+  width: auto;
+  border-radius: 22px;
+  height: 44px;
+  padding: 0px 40px;
+  line-height: 42px;
+  border: 1px solid #fff;
+  color: #fff;
+  cursor: pointer;
+  background-color: #ff735c;
+  font-size: 14px;
+
+}
+
+
+.register .container form .googlogin {
+  width: auto;
+  border-radius: 22px;
+  padding: 10px 40px;
+  border: 1px solid #eae4df;
+  cursor: pointer;
+  font-size: 14px;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 1px -2px, rgba(0, 0, 0, 0.14) 0px 2px 2px, rgba(0, 0, 0, 0.10) 0px 1px 5px;
+}
+
+
+.register .container form .signu a {
+  color: #ff735c;
+  font-style: italic;
+}
+
+
+
+@media screen and (min-width: 768px) and (max-width: 1025px) {
+  .register .container {
+    padding: 80px 30px;
+    gap: 20px;
+  }
+
+  .register .container form h1 {
+    font-size: 30px;
+  }
+
+  .register .container form input {
+    width: 95%;
+  }
+
+
+}
+
+
+
+@media (max-width: 767px) {
+  .register .container {
+    padding: 50px 30px;
+  }
+
+  .register .container .section-b {
+    display: none;
+  }
+
+  .register .container form {
+    width: 100%;
+  }
+
+  .register .container form input {
+    width: 100%;
+  }
+}
