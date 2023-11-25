@@ -1,11 +1,16 @@
 import { useState } from "react";
 import "./Nav.css";
-import Image from "../Imgs/user.jpg";
+import placeholder from "../Imgs/placeholder.jpg";
 import { Link } from "react-router-dom";
 import { BiSearch } from "react-icons/bi";
+import { BsCollection } from "react-icons/bs";
 import { PiNotePencilLight } from "react-icons/pi";
+import { VscNotebook } from "react-icons/vsc";
+import { CiLogout } from "react-icons/ci";
+import { FiUser } from "react-icons/fi";
 import { IoChevronDownSharp } from "react-icons/io5";
-const Navbar = () => {
+// eslint-disable-next-line react/prop-types
+const Navbar = ({ user }) => {
   const [isDropdownOpen, setDropdownOpen] = useState(false);
 
   const toggleDropdown = () => {
@@ -14,7 +19,9 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
-      <div className="logo"> C K - B L O G S</div>
+      <div className="logo">
+        <Link to="/Home">C K - B L O G S</Link>
+      </div>
       <div className="nav-holder-2">
         <BiSearch className="icon" />
         <input type="search" name="" id="" placeholder="Search For Blogs?" />
@@ -28,21 +35,36 @@ const Navbar = () => {
         </li>
 
         <li className="dropdown nav-holder-4" onClick={toggleDropdown}>
-          <img src={Image} alt="user" />
+          <div className="img-cont">
+            <div
+              className="img"
+              style={{
+                backgroundImage: `url(${user || placeholder})`,
+              }}
+            ></div>
+          </div>
           <IoChevronDownSharp className="iconn" />
 
           {isDropdownOpen && (
             <ul className="dropdown-menu">
+              <li className="hidden">
+                <PiNotePencilLight />
+                <Link to="/Write">Write</Link>
+              </li>
               <li>
+                <VscNotebook />
                 <Link to="/About">About</Link>
               </li>
               <li>
+                <FiUser />
                 <Link to="/Profile"> My Profile</Link>
               </li>
               <li>
+                <BsCollection />
                 <Link to="/Library">My Library</Link>
               </li>
               <li>
+                <CiLogout />
                 <Link to="#">Logout</Link>
               </li>
             </ul>
