@@ -1,0 +1,237 @@
+.home .main-cont {
+  width: 100%;
+  padding: 150px 50px 50px 50px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  row-gap: 50px;
+  column-gap: 10px;
+}
+
+
+
+
+
+
+.main-cont .A,
+.main-cont .B,
+.main-cont .C,
+.main-cont .D,
+.main-cont .E,
+.main-cont .F,
+.main-cont .G,
+.main-cont .H {
+  position: relative;
+  /* width: 90%; */
+  width: 400px;
+  margin: auto;
+  overflow: hidden;
+  border: 1px solid #f1f4f1;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 1px -1px, rgba(0, 0, 0, 0.14) 0px 1px 1px, rgba(0, 0, 0, 0.10) 0px 0px 1px;
+  padding: 20px;
+  border-radius: 20px;
+
+}
+
+.main-cont a {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.main-cont .content-overlay {
+  background: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  height: 75%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+}
+
+
+
+
+
+
+.main-cont .A:hover .content-overlay,
+.main-cont .B:hover .content-overlay,
+.main-cont .C:hover .content-overlay,
+.main-cont .D:hover .content-overlay,
+.main-cont .E:hover .content-overlay,
+.main-cont .F:hover .content-overlay,
+.main-cont .G:hover .content-overlay,
+.main-cont .H:hover .content-overlay {
+  opacity: 1;
+}
+
+.main-cont .content-image {
+  width: 100%;
+}
+
+.main-cont .content-details {
+  position: absolute;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 100%;
+  top: 20%;
+  left: 50%;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+
+
+.main-cont .A:hover .content-details,
+.main-cont .B:hover .content-details,
+.main-cont .C:hover .content-details,
+.main-cont .D:hover .content-details,
+.main-cont .E:hover .content-details,
+.main-cont .F:hover .content-details,
+.main-cont .G:hover .content-details,
+.main-cont .H:hover .content-details {
+  top: 50%;
+  left: 50%;
+  opacity: 1;
+}
+
+.main-cont .content-details h3 {
+  color: #fff;
+  font-weight: 900;
+  letter-spacing: 0.15em;
+  margin-bottom: 0.5em;
+  text-transform: uppercase;
+}
+
+.main-cont .content-details p {
+  color: #fff;
+  font-size: 13px;
+  line-height: 1.45;
+}
+
+.main-cont .fadeIn-bottom {
+  top: 80%;
+}
+
+.main-cont h2 {
+  font-weight: 900;
+  color: #ff735c;
+
+}
+
+.main-cont .info {
+  display: flex;
+  gap: 10px;
+}
+
+.main-cont img {
+  height: 350px;
+}
+
+.main-cont .A {
+  width: 55%;
+}
+
+.main-cont .B {
+  width: 40%;
+}
+
+.main-cont .C {
+  width: 40%;
+}
+
+.main-cont .D {
+  width: 55%;
+}
+
+.main-cont .E {
+  width: 55%;
+}
+
+.main-cont .F {
+  width: 40%;
+}
+
+.main-cont .G {
+  width: 40%;
+}
+
+.main-cont .H {
+  width: 55%;
+}
+
+.main-cont .nav-holder-2 {
+  display: none;
+}
+
+
+
+
+
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+  .main-cont .A,
+  .main-cont .B,
+  .main-cont .C,
+  .main-cont .D,
+  .main-cont .E,
+  .main-cont .F,
+  .main-cont .G,
+  .main-cont .H {
+    width: 80%;
+  }
+
+}
+
+@media (max-width: 766px) {
+
+  .main-cont .A,
+  .main-cont .B,
+  .main-cont .C,
+  .main-cont .D,
+  .main-cont .E,
+  .main-cont .F,
+  .main-cont .G,
+  .main-cont .H {
+    width: 100%;
+  }
+
+  .home .main-cont {
+    padding: 100px 30px 50px 30px;
+  }
+
+  .main-cont .nav-holder-2 {
+    display: grid;
+    place-items: center;
+    width: 100%;
+    position: relative;
+  }
+
+  .main-cont .nav-holder-2 .icon {
+    position: absolute;
+    top: 50%;
+    left: 75%;
+    transform: translateY(-50%);
+    color: #888;
+    font-size: 18px;
+  }
+
+  .main-cont .nav-holder-2 input {
+    width: 80%;
+    padding: 10px 10px 10px 30px;
+    font-size: 14px;
+    outline: none;
+    border: 1px solid #ff735c;
+  }
+}

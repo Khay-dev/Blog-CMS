@@ -8,7 +8,7 @@
 }
 
 .mainSection h2 {
-  font-size: clamp(2rem, 5vw + 2rem, 5rem);
+  font-size: clamp(2.2rem, 5vw + 2rem, 5rem);
   line-height: 0.9;
   color: #ff735c;
   font-weight: bolder;
@@ -29,6 +29,8 @@
   font-weight: bold;
   color: #ff735c;
 }
+
+
 
 .mainSection .btn {
   display: flex;
@@ -91,4 +93,19 @@
   position: relative;
   display: inline-block;
 
+}
+
+
+
+@media (max-width: 767px) {
+
+  .mainSection h2,
+  .mainSection p:nth-of-type(3),
+  .mainSection p:nth-of-type(4) {
+    text-align: center;
+  }
+
+  .mainSection p:nth-of-type(4) {
+    width: 80%;
+  }
 }
